@@ -1,8 +1,7 @@
 /*server.js*/
 /* 'use strict'; */
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const default_port = 3000;
 
 const http = require('http');
 
@@ -40,6 +39,13 @@ const server = http.createServer(function(req, res) {
 
 app.use(express.static(__dirname + '/../client'));
 
+var port;
+if (process.env.PORT) {
+  port = proces.env.PORT;
+} else {
+  port = default_port;
+}
+
 server.listen(port, () => {
-  console.log('Server running at http://' + hostname + ':' + port + '/')
+  console.log('Serving on port: ' + port)
 });
