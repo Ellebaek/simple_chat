@@ -1,0 +1,19 @@
+{
+  "name": "simple_chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ellebaek/simple_chat.git"
+  },
+  "author": "Thomas Ellebæk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ellebaek/simple_chat/issues"
+  },
+  "homepage": "https://github.com/Ellebaek/simple_chat#readme"
+}
