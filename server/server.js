@@ -41,7 +41,7 @@ app.use(express.static(__dirname + '/../client'));
 
 var port;
 if (process.env.PORT) {
-  port = proces.env.PORT;
+  port = process.env.PORT;
 } else {
   port = default_port;
 }
